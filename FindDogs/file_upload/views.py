@@ -31,3 +31,8 @@ def handle_uploaded_file(file_obj):
             sys.stderr.write("*** handle_uploaded_file *** ccc ***\n")
             destination.write(chunk)
             sys.stderr.write("*** handle_uploaded_file *** eee ***\n")
+
+def success(request):
+    str_out="Success!<p />"
+    str_out += "成功<p />"
+    return HttpResponse(str_out)
